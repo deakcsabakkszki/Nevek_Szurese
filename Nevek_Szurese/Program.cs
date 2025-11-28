@@ -4,6 +4,14 @@
     {
         static void Main(string[] args)
         {
+            List<String> nevek=new List<String>();
+            //. Például: Kiss István, Nagy elemér, kissándorjózsef23, Tóth# Ilona
+            nevek.Add("Kiss István");
+            nevek.Add("Nagy elemér");
+            nevek.Add("kissándorjózsef23");
+            nevek.Add(" Tóth# Ilona");
+            nevek.Add("Deák Csaba");
+            
             while (true)
             {
                 Console.Clear();
