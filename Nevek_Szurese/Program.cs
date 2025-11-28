@@ -84,7 +84,10 @@
                 }
                 else if (valaszt == "5")
                 {
-                    //5
+                    //5 Legalább egy szóközt tartalmazók
+                    foreach(var nev in nevek)
+                        if(nev.Contains(" "))
+                            Console.WriteLine(nev);
                 }
                 else if (valaszt == "6")
                 {
