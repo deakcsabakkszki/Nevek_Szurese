@@ -91,7 +91,28 @@
                 }
                 else if (valaszt == "6")
                 {
-                    //6
+                    //6 Csak rendes nevek 
+
+                    foreach (var nev in nevek)
+                    {
+                        //csak betűk
+                        bool jo = true;
+                        foreach (char betu in nev)
+                        {
+                            if (!char.IsLetter(betu) && betu != ' ')
+                                jo = false;
+                        }
+
+                        //nagybetűvizsgálat
+                        string[] darabok = nev.TrimStart().Split(' ');
+                        foreach (String nevdarab in darabok)
+                        {
+                            if (!char.IsUpper(nevdarab.TrimStart()[0]))
+                                jo = false;
+                        }
+                        if (jo)
+                            Console.WriteLine(nev);
+                    }
                 }
                 else {
                     Console.WriteLine("Nincs ilyen parancs!");
