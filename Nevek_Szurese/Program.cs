@@ -29,7 +29,10 @@
                 }
                 else if (valaszt == "1")
                 {
-                    //1
+                    Console.Clear();
+                    foreach (String nev in nevek) {
+                        Console.WriteLine(nev.TrimStart());
+                    }
                 }
                 else if (valaszt == "2")
                 {
